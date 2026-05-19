@@ -169,6 +169,16 @@ body{
 <p>Análisis de limpieza y tratamiento de datos</p>
 </div>
 
+<section style="background:#121933;padding:30px;border-radius:22px;margin-bottom:35px;box-shadow:0 0 15px rgba\(0,0,0,0.25\)">
+<h2 style="font-size:30px;margin-bottom:15px">¿Qué representa este dashboard?</h2>
+<p style="color:#b7c1e6;line-height:1.8;font-size:15px;margin-bottom:15px">
+Este dashboard presenta el proceso completo de limpieza y preparación de datos realizado sobre el dataset de préstamos de <strong>Lending Club</strong>. El objetivo principal fue identificar columnas con valores nulos, aplicar técnicas de imputación y eliminar información que pudiera afectar la calidad del análisis.
+</p>
+<p style="color:#b7c1e6;line-height:1.8;font-size:15px">
+Durante el proceso se analizaron más de <strong>2.26 millones de registros</strong> y 151 columnas originales. Después del tratamiento de datos, el dataset quedó completamente limpio, sin valores nulos y listo para futuros análisis estadísticos, modelos predictivos o proyectos de ciencia de datos.
+</p>
+</section>
+
 <div class="cards">
 
 <div class="card">
@@ -197,6 +207,11 @@ body{
 
 <div class="chart-box">
 <h2>Tratamiento de Columnas</h2>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px">
+<span style="background:#1d2752;padding:6px 12px;border-radius:20px;font-size:13px">44 eliminadas</span>
+<span style="background:#1b4b3c;padding:6px 12px;border-radius:20px;font-size:13px">43 imputadas</span>
+<span style="background:#5a4216;padding:6px 12px;border-radius:20px;font-size:13px">64 sin cambios</span>
+</div>
 <p>Distribución del tratamiento aplicado a las columnas del dataset.</p>
 
 <div class="chart-container chart-medium">
@@ -206,6 +221,9 @@ body{
 
 <div class="chart-box">
 <h2>Top 15 Columnas con Nulos</h2>
+<div style="background:#1b203f;padding:12px;border-radius:12px;margin-bottom:12px;color:#c9d2f0;font-size:14px;line-height:1.7">
+Las columnas con porcentajes superiores al 50% fueron eliminadas debido a la gran cantidad de información faltante. Esto permitió reducir ruido y mejorar la calidad general del dataset.
+</div>
 <p>Columnas con mayor porcentaje de valores faltantes.</p>
 
 <div class="chart-container chart-top">
@@ -215,6 +233,20 @@ body{
 
 <div class="chart-box">
 <h2>Tipos de Datos</h2>
+<div style="display:grid;grid-template-columns:repeat\(3,1fr\);gap:10px;margin-bottom:12px;text-align:center">
+<div style="background:#1d2752;padding:10px;border-radius:12px">
+<div style="font-size:20px;font-weight:700">94</div>
+<div style="font-size:12px;color:#9ba6d0">float64</div>
+</div>
+<div style="background:#2a1e4d;padding:10px;border-radius:12px">
+<div style="font-size:20px;font-weight:700">41</div>
+<div style="font-size:12px;color:#9ba6d0">object</div>
+</div>
+<div style="background:#1b4b3c;padding:10px;border-radius:12px">
+<div style="font-size:20px;font-weight:700">16</div>
+<div style="font-size:12px;color:#9ba6d0">int64</div>
+</div>
+</div>
 <p>Distribución de columnas según su tipo de dato.</p>
 
 <div class="chart-container chart-small">
@@ -224,6 +256,9 @@ body{
 
 <div class="chart-box">
 <h2>Comparación Antes vs Después</h2>
+<div style="background:#1b203f;padding:12px;border-radius:12px;margin-bottom:12px;color:#c9d2f0;font-size:14px;line-height:1.7">
+La limpieza del dataset permitió reducir columnas innecesarias y eliminar completamente los valores nulos sin afectar la cantidad total de registros disponibles.
+</div>
 <p>Impacto del proceso de limpieza del dataset.</p>
 
 <div class="chart-container chart-bottom">
